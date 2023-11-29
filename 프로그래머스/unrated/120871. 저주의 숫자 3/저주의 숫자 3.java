@@ -3,8 +3,8 @@ class Solution {
         int answer = 0;
         for(int i =0; i<n; i++){
            answer++;
-           while(answer%3==0 || (answer+"").contains("3")) {
-        	   answer++;
+           if(answer%3==0 || (answer+"").contains("3")) {
+        	   i-=1;
            }
        }
 
