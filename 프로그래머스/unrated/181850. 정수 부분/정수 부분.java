@@ -1,5 +1,8 @@
 class Solution {
     public int solution(double flo) {
-        return (int)flo;
+        String str = flo+"";
+        String[] arr = str.split("[.]");
+        
+        return Integer.parseInt(arr[0]);
     }
 }
