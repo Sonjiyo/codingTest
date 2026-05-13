@@ -4,8 +4,8 @@ class Solution {
         int height = 0;
         
         for(int i=0; i<sizes.length; i++){
-            int max = Math.max(sizes[i][0], sizes[i][1]);
-            int min = Math.min(sizes[i][0], sizes[i][1]);
+            int max = sizes[i][0]>sizes[i][1] ? sizes[i][0] : sizes[i][1];
+            int min = sizes[i][0]>sizes[i][1] ? sizes[i][1] : sizes[i][0];
             
             width = max>width ? max : width;
             height = min>height ? min : height;
